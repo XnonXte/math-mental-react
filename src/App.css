@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Space+Mono&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Mulish, sans-serif;
+  font-size: 100%;
+}
+
+:root {
+  --primary-color: hsl(200, 100%, 40%);
+  --secondary-color: hsl(0, 0%, 40%);
+  --danger-color: hsl(0, 100%, 60%);
+  --success-color: hsl(140, 100%, 60%);
+  --light: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.container {
+  width: 600px;
+  background-color: var(--light);
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  box-shadow: 8px 10px 0 2px black;
+}
+
+.question {
+  color: var(--light);
+  background-color: var(--primary-color);
+  border: 1px solid black;
+  border-radius: 6px;
+  margin: 1rem 1.25rem;
+  padding: 12px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-input input {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+button {
+  background-color: var(--secondary-color);
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+button:hover {
+  background-color: #999;
+}
+
+.list-container {
+  padding: 0;
+  margin: 10px 0px;
+  list-style-type: none;
+}
+
+.list-item {
+  padding: 4px;
+  margin: 8px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.correct {
+  background-color: var(--success-color);
+}
+
+.incorrect {
+  background-color: var(--danger-color);
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 600px;
+  }
+}
